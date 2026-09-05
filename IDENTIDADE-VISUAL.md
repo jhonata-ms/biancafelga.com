@@ -1,34 +1,23 @@
 # Identidade visual — Bianca Felga
 
-Este documento registra a paleta oficial do site e orienta a criação de páginas futuras.
+Direção aprovada: dark academia, galeria intimista, tipografia clássica e detalhes delicados.
 
-## Paleta oficial
-
-| Token CSS | Nome | Cor |
+| Cor | Código | Uso |
 | --- | --- | --- |
-| `--azul-petroleo-profundo` | Azul Petróleo Profundo | `#243B43` |
-| `--azul-ardosia` | Azul Ardósia | `#4F6970` |
-| `--dourado-ambar` | Dourado Âmbar | `#B8793F` |
-| `--creme-dourado` | Creme Dourado | `#D8C39A` |
-| `--marrom-bronze` | Marrom Bronze | `#654B3A` |
-| `--roxo-profundo` | Roxo Profundo | `#3C2A45` |
-| `--roxo-amora` | Roxo Amora | `#6D4A6E` |
-| `--rosa-queimado` | Rosa Queimado | `#B47A7F` |
-| `--pele-rosada-clara` | Pele Rosada Clara | `#E7C5B8` |
-| `--pele-rosada-media` | Pele Rosada Média | `#D4A79C` |
-| `--pele-rosada-escura` | Pele Rosada Escura | `#B87C6B` |
+| Oxford Brown | #3E2723 | Superfícies quentes |
+| Antique Gold | #C49A6C | Detalhes, títulos e ações |
+| Velvet Burgundy | #6A1B3D | Destaques da seção de óleo |
+| Charcoal Slate | #37474F | Tom de apoio |
+| Ivy Green | #2C6B4F | Destaques da seção de aquarela |
+| Fundo escuro | #171914 | Fundo principal |
+| Marfim | #ECE5D4 | Texto principal |
 
-## Uso nas páginas
+Títulos: Cormorant Garamond. Texto: EB Garamond. Navegação e pequenas legendas: Arial. Fontes carregadas pelo Google Fonts com fallback local em Georgia.
 
-- Fundo principal: `--paper` (`--pele-rosada-clara`).
-- Texto e ações principais: `--ink` e `--forest` (`--azul-petroleo-profundo`).
-- Superfícies claras e cartões: `--paper-light` (`--creme-dourado`).
-- Destaques e interações: `--coral` (`--roxo-amora`).
-- Áreas escuras: `--roxo-profundo` ou `--azul-petroleo-profundo`, sempre com texto claro.
-- Elementos secundários: `--azul-ardosia`, `--marrom-bronze` e os tons rosados.
+Navegação: Sobre a artista, Galeria aberta e Entre em contato. A galeria abre páginas próprias para Aquarelas e Óleo sobre tela. Óleo sobre tela contém as obras #01 a #32. As disponibilidades da #10 e das #14 a #32 permanecem a consultar. Aquarelas contém “I’m Alfie (Pet)” #01, “I’m Monty (Pet)” #02 e “I’m Angus (Pet)” #03, todos disponíveis. A numeração é independente por técnica. Não atribuir números, temas ou disponibilidade sem dados da artista. Cada obra deverá apresentar foto integral, tema/descrição, número, disponibilidade e ação Adquirir arte com mensagem identificando a obra no WhatsApp.
 
-As definições oficiais ficam no bloco `:root` de `assets/css/site.css`. Toda página nova deve carregar esse arquivo e utilizar os tokens semânticos já existentes. Evite inserir novos códigos hexadecimais diretamente em componentes.
+WhatsApp preservado do site anterior: +44 7397 077578.
 
-## Contraste
+## Assinatura
 
-Para textos corridos, use preferencialmente Azul Petróleo Profundo ou Roxo Profundo sobre Pele Rosada Clara e Creme Dourado. Em fundos escuros, use Pele Rosada Clara ou Creme Dourado. Rosa Queimado, Pele Rosada Escura e Dourado Âmbar devem ser usados principalmente em detalhes, superfícies e elementos decorativos.
+O cabeçalho e o rodapé utilizam `images/logo.png`, a assinatura original com canal alfa transparente. O CSS aplica uma cor clara aos traços para leitura sobre o fundo escuro, sem fundo retangular nem mistura de cores com o fundo. A versão gerada `images/assinatura-pena.png` não é utilizada nas páginas.
