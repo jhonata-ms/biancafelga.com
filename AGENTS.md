@@ -75,6 +75,16 @@ Preservar o link “Ir para o conteúdo”, textos alternativos, foco visível d
 
 ## Manutenção
 
+### Cache busting e versão dos arquivos
+
+A versão global atual dos arquivos é **1**. As referências locais a CSS, JavaScript e imagens usam o parâmetro `?v=1`, inclusive os links para ampliar as obras.
+
+Sempre que houver qualquer alteração nos arquivos do projeto, incrementar a versão global em um número inteiro (por exemplo, de `1` para `2`) e atualizar este registro e todas as referências versionadas em todas as páginas em português e inglês. Fazer um único incremento por conjunto de alterações entregue, sem novos incrementos apenas por atualizar a própria versão. Nunca reutilizar uma versão anterior.
+
+Novas referências a arquivos locais também devem usar a versão global atual, incluindo futuros `srcset`, `url()` no CSS e carregamentos pelo JavaScript. Preservar caminhos relativos e fragmentos; se a URL já tiver outros parâmetros, adicionar a versão com `&v=N` (usando `&amp;` em atributos HTML). Não adicionar versões aos links de navegação HTML, WhatsApp ou recursos externos, como Google Fonts.
+
+Antes de entregar, conferir que todas as referências locais aos recursos usam a mesma versão e apontam para arquivos existentes. Publicar os HTML atualizados junto com os recursos alterados. Na hospedagem, o HTML deve ser revalidado a cada acesso (por exemplo, com o cabeçalho HTTP `Cache-Control: no-cache`); o versionamento dos recursos sozinho não atualiza um HTML antigo mantido em cache. Essa política depende da configuração da hospedagem.
+
 O site usa HTML estático, estilos compartilhados em `assets/css/site.css` e comportamento em `assets/js/site.js`. Aplicar alterações visuais nesses componentes compartilhados, respeitando as classes e os padrões existentes.
 
 Ao alterar a interface, conferir versões em português e inglês, desktop e celular, navegação, legibilidade, proporção das imagens e links de aquisição. Atualizar este documento quando houver uma mudança aprovada de identidade visual ou de padrões do projeto.
