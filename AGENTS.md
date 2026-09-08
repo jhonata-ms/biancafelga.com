@@ -77,7 +77,7 @@ Preservar o link “Ir para o conteúdo”, textos alternativos, foco visível d
 
 ### Cache busting e versão dos arquivos
 
-A versão global atual dos arquivos é **1**. As referências locais a CSS, JavaScript e imagens usam o parâmetro `?v=1`, inclusive os links para ampliar as obras.
+A versão global atual dos arquivos é **2**. As referências locais a CSS, JavaScript e imagens usam o parâmetro `?v=2`, inclusive os links para ampliar as obras.
 
 Sempre que houver qualquer alteração nos arquivos do projeto, incrementar a versão global em um número inteiro (por exemplo, de `1` para `2`) e atualizar este registro e todas as referências versionadas em todas as páginas em português e inglês. Fazer um único incremento por conjunto de alterações entregue, sem novos incrementos apenas por atualizar a própria versão. Nunca reutilizar uma versão anterior.
 
